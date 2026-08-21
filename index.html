@@ -3,13 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HP Support — Official HP® Customer Service</title>
-  <link rel="icon" href="https://www.hp.com/etc.clientlibs/hpweb/clientlibs/clientlib-base/resources/favicon.ico">
-  <style>
+  <title>Support — Official Customer Service</title>
+ <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      font-family: "HP Simplified", "Forma DJR UI", Arial, Helvetica, sans-serif;
+      font-family: " Simplified", "Forma DJR UI", Arial, Helvetica, sans-serif;
       color: #1a1a1a;
       background: #fff;
       line-height: 1.5;
@@ -31,7 +30,7 @@
 
     .logo-area { display: flex; align-items: center; gap: 28px; }
 
-    /* Official HP logo (2025 SVG from Wikimedia) */
+    /* Official  logo (2025 SVG from Wikimedia) */
     .wpr-main-logo-svg {
       display: inline-flex;
       align-items: center;
@@ -90,7 +89,7 @@
       flex-shrink: 0;
     }
     .wpr-search-icon-logo::before {
-      content: ;
+      content: "";
       font-size: 15px;
     }
 
@@ -100,7 +99,7 @@
       display: flex;
       align-items: center;
     }
-    .wpr-hpcart {
+    .wpr-cart {
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -108,7 +107,7 @@
       height: 36px;
       position: relative;
     }
-    .wpr-hpcart::before {
+    .wpr-cart::before {
       content: "";
       display: block;
       width: 22px;
@@ -174,7 +173,7 @@
     .heroBanner {
       position: relative;
       min-height: 220px;
-      background-image: url("https://support.hp.com/wcc-assets/content/dam/hp-wcc/headless-assets/images/image/Print_banner_new.jpg");
+      background-image: url("https://i.postimg.cc/KYbvpcpn/banner-new.jpg");
       background-size: cover;
       background-position: right center;
       background-repeat: no-repeat;
@@ -1387,6 +1386,316 @@ footer{
 }
 </style>
 
+
+<style id="final-logo-blue-mobile-fix">
+/* =========================================================
+   FINAL LOGO-MATCHED BLUE + MOBILE HELPLINE FIX
+   Primary blue follows the existing logo/site blue: #0073E6
+   ========================================================= */
+:root{
+  --logo-blue:#0073E6;
+  --logo-blue-dark:#005BB5;
+  --logo-blue-deep:#004A94;
+  --logo-blue-light:#EAF5FF;
+  --logo-blue-soft:#F5FAFF;
+  --logo-ink:#172333;
+}
+
+/* Keep one consistent blue family throughout the UI */
+a{color:var(--logo-blue)}
+.main-nav a:hover{color:var(--logo-blue)!important}
+.support-nav{background:var(--logo-blue)!important}
+.btn-primary{background:var(--logo-blue)!important;border-color:var(--logo-blue)!important}
+.btn-primary:hover{background:var(--logo-blue-dark)!important}
+.support-call-chip{background:var(--logo-blue)!important}
+.support-call-chip:hover{background:var(--logo-blue-dark)!important}
+.phone-cta{background:var(--logo-blue)!important}
+.phone-cta:hover{background:var(--logo-blue-dark)!important}
+.floating-call{background:var(--logo-blue)!important}
+.floating-call:hover{background:var(--logo-blue-dark)!important}
+.feedback-tab{background:var(--logo-blue)!important}
+.feedback-tab:hover{background:var(--logo-blue-dark)!important}
+.quick-link span{color:var(--logo-blue)!important}
+.ql-icon svg{stroke:var(--logo-blue)!important}
+.quick-link.va .ql-icon{background:var(--logo-blue)!important}
+.quick-link:hover{box-shadow:inset 0 -2px var(--logo-blue)!important}
+.btn-outline{color:var(--logo-blue)!important;border-color:var(--logo-blue)!important}
+.btn-outline:hover{background:var(--logo-blue)!important;color:#fff!important}
+.knowledge-search button{background:var(--logo-blue)!important}
+.banner-dots span.active{background:var(--logo-blue)!important}
+.win11{color:var(--logo-blue)!important}
+.win11-sq span{background:var(--logo-blue)!important}
+.topic:before{background:linear-gradient(90deg,var(--logo-blue),#38A8FF)!important}
+.section-kicker{color:var(--logo-blue)!important;background:var(--logo-blue-light)!important;border-color:#CFE5FA!important}
+.identify{background:var(--logo-blue-soft)!important;border-color:#DCEAF7!important}
+
+/* Header helpline: desktop */
+.support-call-chip{
+  min-height:42px;
+  display:inline-flex!important;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  flex:0 0 auto;
+  white-space:nowrap;
+  line-height:1;
+}
+.support-call-chip .phone-dot{
+  width:30px!important;
+  height:30px!important;
+  flex:0 0 30px;
+  background:var(--logo-blue-light)!important;
+  color:var(--logo-blue)!important;
+}
+.support-call-chip .phone-dot:before{
+  width:17px!important;
+  height:17px!important;
+}
+
+/* Hero helpline */
+.hero-call{
+  max-width:360px;
+  min-width:245px;
+}
+.hero-call-icon{
+  flex:0 0 50px;
+  background:var(--logo-blue-light)!important;
+  color:var(--logo-blue)!important;
+}
+
+/* Main support cards */
+.call-card{
+  width:100%;
+  min-width:0;
+}
+.call-card-copy{
+  min-width:0;
+  overflow-wrap:anywhere;
+}
+.phone-cta{
+  flex:0 0 auto;
+  min-height:42px;
+  white-space:nowrap;
+  justify-content:center;
+}
+
+/* Bottom floating helpline */
+.floating-call{
+  min-height:54px;
+  max-width:calc(100vw - 24px);
+  white-space:nowrap;
+}
+.floating-call .phone-ring{
+  flex:0 0 38px;
+}
+
+/* Fix inline bottom support container from the original markup */
+body > div[style*="max-width:1000px"]{
+  width:min(1000px,calc(100% - 32px))!important;
+  max-width:none!important;
+  padding:0!important;
+  margin:0 auto 44px!important;
+}
+
+/* ===== TABLET ===== */
+@media (max-width:900px){
+  .header-right{
+    flex-wrap:nowrap!important;
+    min-width:0;
+  }
+
+  .support-call-chip{
+    order:initial!important;
+  }
+
+  .hero-call{
+    left:24px!important;
+    right:24px!important;
+    bottom:24px!important;
+    width:auto!important;
+    max-width:none!important;
+    min-width:0!important;
+  }
+
+  .call-card{
+    gap:12px;
+  }
+}
+
+/* ===== MOBILE ===== */
+@media (max-width:700px){
+  .top-header{
+    padding:8px 12px!important;
+  }
+
+  .header-right{
+    gap:6px!important;
+  }
+
+  /* Header becomes icon + compact call button + sign in */
+  .support-call-chip{
+    width:42px!important;
+    height:42px!important;
+    min-height:42px!important;
+    padding:5px!important;
+    border-radius:50%!important;
+    gap:0!important;
+    overflow:hidden!important;
+    flex:0 0 42px!important;
+  }
+
+  .support-call-chip .phone-dot{
+    width:32px!important;
+    height:32px!important;
+    flex:0 0 32px!important;
+  }
+
+  .support-call-chip span:last-child{
+    display:none!important;
+  }
+
+  .sign-in-btn{
+    white-space:nowrap!important;
+    padding:8px 10px!important;
+    border-radius:8px!important;
+  }
+
+  /* Hero helpline becomes a full-width, easy-to-tap call card */
+  .hero-call{
+    left:16px!important;
+    right:16px!important;
+    bottom:16px!important;
+    width:calc(100% - 32px)!important;
+    min-width:0!important;
+    max-width:none!important;
+    min-height:64px!important;
+    padding:10px 13px!important;
+    border-radius:12px!important;
+    gap:10px!important;
+  }
+
+  .hero-call-icon{
+    width:42px!important;
+    height:42px!important;
+    flex:0 0 42px!important;
+  }
+
+  .hero-call small{
+    font-size:10px!important;
+  }
+
+  .hero-call strong{
+    font-size:14px!important;
+    white-space:nowrap!important;
+  }
+
+  /* Main helpline card stacks cleanly */
+  .call-card{
+    flex-direction:column!important;
+    align-items:stretch!important;
+    justify-content:flex-start!important;
+    padding:14px!important;
+    gap:12px!important;
+  }
+
+  .call-card-copy{
+    width:100%!important;
+  }
+
+  .phone-cta{
+    width:100%!important;
+    min-height:46px!important;
+    padding:12px 14px!important;
+    white-space:normal!important;
+    text-align:center!important;
+  }
+
+  /* Bottom helpline: compact pill, never wider than viewport */
+  .floating-call{
+    left:12px!important;
+    right:12px!important;
+    bottom:12px!important;
+    width:auto!important;
+    max-width:none!important;
+    min-height:52px!important;
+    justify-content:center!important;
+    padding:7px 14px 7px 7px!important;
+    border-radius:999px!important;
+  }
+
+  .floating-call .phone-ring{
+    width:36px!important;
+    height:36px!important;
+    flex-basis:36px!important;
+  }
+
+  /* Prevent the floating call from covering the footer */
+  footer{
+    padding-bottom:76px!important;
+  }
+
+  /* Bottom "Still need help?" section */
+  body > div[style*="max-width:1000px"]{
+    width:calc(100% - 28px)!important;
+    margin-bottom:28px!important;
+  }
+}
+
+/* ===== VERY SMALL PHONES ===== */
+@media (max-width:380px){
+  .wpr-main-logo-svg{
+    width:40px!important;
+    height:40px!important;
+  }
+
+  .wpr-main-logo-svg img{
+    width:36px!important;
+    height:36px!important;
+  }
+
+  .sign-in-btn{
+    font-size:11px!important;
+    padding:7px 8px!important;
+  }
+
+  .hero-call{
+    padding:9px 10px!important;
+  }
+
+  .hero-call strong{
+    font-size:12px!important;
+  }
+
+  .floating-call{
+    font-size:12px!important;
+  }
+}
+</style>
+
+
+<style id="final-nav-normal-weight">
+/* Keep top navigation clean and regular-weight */
+.main-nav a,
+.support-nav a{
+  font-weight:400!important;
+}
+
+.main-nav a:hover,
+.support-nav a:hover,
+.support-nav a.active{
+  font-weight:400!important;
+}
+
+/* Keep navigation readable without bold styling */
+.main-nav{
+  font-weight:400!important;
+}
+
+.support-nav{
+  font-weight:400!important;
+}
+</style>
+
 </head>
 <body>
 
@@ -1401,8 +1710,8 @@ footer{
          data-gtm-id="header"
          data-gtm-category="globalNavigation"
          data-gtm-value="1000184">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/HP_logo_2025.svg"
-             alt="Printer Support"
+        <img src="https://i.postimg.cc/bNJZhvTY/logo.png"
+             alt="logo"
              width="42" height="42">
       </a>
 
@@ -1416,22 +1725,22 @@ footer{
     <div class="header-right">
       <div class="Rectangle-426">
         <input id="search_focus_desktop"
-               aria-label="Search HP Support"
-               title="Search HP Support"
+               aria-label="Search  Support"
+               title="Search  Support"
                type="text"
                class="search_trigger_onenter search-bar"
                name="search-bar"
-               placeholder="Search HP Support"
+               placeholder="Search"
                autocomplete="off"
                maxlength="200">
-        <a tabindex="0" href="javascript:void(0)" class="wpr-search-icon-logo" title="Search HP.com"></a>
+        <a tabindex="0" href="javascript:void(0)" class="wpr-search-icon-logo" title="Search .com"></a>
       </div>
 
       <div class="wpr-cart-icon">
         <a tabindex="0"
            id="shop_widget"
-           class="wpr-hpcart"
-           href="https://store.hp.com/us-en/default/checkout/cart/"
+           class="wpr-cart"
+           href="https://store..com/us-en/default/checkout/cart/"
            title="Shopping Cart">
           <span class="screenReadingText">Shopping Cart</span>
         </a>
@@ -1440,7 +1749,7 @@ footer{
 
       <a class="support-call-chip" href="tel:+18336569631" aria-label="Call printer support at 1 833 656 9631">
         <span class="phone-dot" aria-hidden="true"></span>
-        <span>Call Support: +1 (833) 656-9631</span>
+        <span>Helpline : +1 (833) 656-9631</span>
       </a>
       <button class="sign-in-btn">Sign in</button>
     </div>
@@ -1449,17 +1758,17 @@ footer{
 
   <!-- Blue Support Nav -->
   <nav class="support-nav">
-    <a href="#">Support Home</a>
+    <a href="#">Home</a>
     <a href="#" class="active">Products ▾</a>
     <a href="#">Software and Drivers</a>
     <a href="#">Diagnostics ▾</a>
     <a href="#">Contact Us</a>
     <a href="#">Business Support ▾</a>
-    <a href="#">My HP Account ▾</a>
+    <a href="#">My  Account ▾</a>
   </nav>
 
   <!-- Hero Banner -->
-  <div class="heroBanner" data-image-quality="high" style="background-image: url('https://support.hp.com/wcc-assets/content/dam/hp-wcc/headless-assets/images/image/Print_banner_new.jpg');">
+  <div class="heroBanner" data-image-quality="high" style="background-image: url('https://i.postimg.cc/KYbvpcpn/banner-new.jpg');">
     <div class="heroHeadingWrapper">
       <span class="section-kicker">Fast help for printer issues</span>
       <h1 class="heroBannerHeading">Printer Support</h1>
@@ -1502,13 +1811,13 @@ footer{
   <!-- Contact Support Section -->
   <section class="setup-section">
     <div class="setup-img">
-      <img alt="Contact HP Support"
-           src="https://www.hp.com/content/dam/hp-wcc/headless-assets/images/topic/Printer_feature.png"
+      <img alt="Contact  Support"
+           src="https://i.postimg.cc/pXZHVQs3/feature.jpg"
            onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(150deg,#e3eef5,#c5d8e6)';">
     </div>
     <div class="setup-text">
       <h2>Contact Printer Support</h2>
-      <p>Need help with your HP printer? Our independent support team is available to assist you with setup, troubleshooting, and more.</p>
+      <p>Need help with your  printer? Our support team is available to assist you with setup, troubleshooting, and more.</p>
       <div class="call-card">
         <div class="call-card-copy">
           <strong>Speak with a support specialist</strong>
@@ -1545,7 +1854,7 @@ footer{
     <div class="topic">
       <div class="topic-icon-wrap">
         <img alt=""
-             src="https://support.hp.com/wcc-assets/content/dam/hp-wcc/headless-assets/images/topic/Printer_2.png"
+             src="https://i.postimg.cc/BQ8T4NS7/Printer-2.png"
              onerror="this.style.display='none';">
       </div>
       <h3><a href="#">How to print, scan and fax</a></h3>
@@ -1560,14 +1869,14 @@ footer{
     <div class="topic">
       <div class="topic-icon-wrap">
         <img alt=""
-             src="https://support.hp.com/wcc-assets/content/dam/hp-wcc/headless-assets/images/topic/printeroffline.png"
+             src="https://i.postimg.cc/0y0dBj2D/printeroffline.png"
              onerror="this.style.display='none';">
       </div>
       <h3><a href="#">Printer offline or print job stuck in queue?</a></h3>
-      <a href="#" class="btn-primary">Get the HP app</a>
+      <a href="#" class="btn-primary">Get the  app</a>
       <div class="more-opts">
         More support options for this topic
-        <a href="#">Use Diagnose &amp; Fix in the HP app to repair common printing issues ›</a>
+        <a href="#">Use Diagnose &amp; Fix in the  app to repair common printing issues ›</a>
       </div>
     </div>
   </section>
@@ -1595,7 +1904,7 @@ footer{
             <button class="btn-primary">Submit</button>
           </div>
           <div class="id-detect">
-            <a href="#" class="btn-outline">Or, let HP detect your product</a>
+            <a href="#" class="btn-outline">Or, let  detect your product</a>
             <a href="#">Find out more ›</a>
           </div>
           <div class="id-signin">
@@ -1628,12 +1937,12 @@ footer{
       <img class="banner-bg"
            loading="lazy"
            alt="Built-in support for your PCs and printers"
-           src="https://support.hp.com/wcc-assets/content/dam/hp-wcc/headless-assets/images/carousel-image/HPSA_Carousel.jpg" fetchpriority="high" decoding="async"
+           src="https://i.postimg.cc/nc84VBX1/SA-Carousel.jpg" fetcriority="high" decoding="async"
            onerror="this.style.display='none';">
       <div class="banner-overlay"></div>
       <button class="banner-arrow prev">‹</button>
       <div class="banner-content">
-        <h3>Issue with your HP printer?</h3>
+        <h3>Issue with your  printer?</h3>
         <p>Use our diagnostic tools for help with common Printer issues</p>
         <a href="#" class="btn-primary">Printer Diagnostic Tools</a>
       </div>
@@ -1650,7 +1959,7 @@ footer{
     <div class="call-card" style="justify-content:center;">
       <div class="call-card-copy">
         <strong>Still need help?</strong>
-        Call our independent printer-support team.
+        Call our printer-support team.
       </div>
       <a href="tel:+18336569631" class="phone-cta">+1 (833) 656-9631</a>
     </div>
@@ -1665,7 +1974,7 @@ footer{
     <div class="footer-grid">
       <div class="footer-col">
         <h4>About Us</h4>
-        <a href="#">Contact HP</a>
+        <a href="#">Contact </a>
         <a href="#">Careers</a>
         <a href="#">Investor relations</a>
         <a href="#">Sustainable impact</a>
@@ -1675,10 +1984,10 @@ footer{
       <div class="footer-col">
         <h4>Ways to buy</h4>
         <a href="#">Shop online</a>
-        <a href="#">HP World: Brand exclusive stores</a>
-        <a href="#">Call an HP rep</a>
+        <a href="#"> World: Brand exclusive stores</a>
+        <a href="#">Call an  rep</a>
         <a href="#">Find a reseller</a>
-        <a href="#">HP Promotions</a>
+        <a href="#"> Promotions</a>
       </div>
       <div class="footer-col">
         <h4>Support</h4>
@@ -1691,8 +2000,8 @@ footer{
       </div>
       <div class="footer-col">
         <h4>Support Partners</h4>
-        <a href="#">HP Amplify Partner Program</a>
-        <a href="#">HP Partner Portal</a>
+        <a href="#"> Amplify Partner Program</a>
+        <a href="#"> Partner Portal</a>
         <a href="#">Developers</a>
       </div>
       <div class="footer-col">
@@ -1718,7 +2027,7 @@ footer{
         <a href="#">Cookie Preferences</a>
       </div>
       <div class="footer-copy">
-        © 2026 Independent Printer Support The information contained herein is subject to change without notice.
+        © 2026. The information contained herein is subject to change without notice.
       </div>
     </div>
   </footer>
